@@ -27,6 +27,7 @@ public class App {
         job.setReducerClass(Reduce.class);
         job.setInputFormatClass(TextInputFormat.class);
         job.setOutputFormatClass(TextOutputFormat.class);
+        job.setJarByClass(Map.class);
         return job;
     }
 }
