@@ -120,6 +120,10 @@ public class GameWritable implements Writable {
         return moves;
     }
 
+    public String[] getAllMoves() {
+        return moves.toString().split(" ");
+    }
+
     public Text getOpening_eco() {
         return opening_eco;
     }
