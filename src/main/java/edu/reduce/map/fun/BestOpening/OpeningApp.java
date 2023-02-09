@@ -24,15 +24,15 @@ public class OpeningApp {
     private static Job configureJob(final String jobName) throws IOException {
         Job job = Job.getInstance(new Configuration(), jobName);
 
-        job.setOutputKeyClass(Text.class);
-        job.setOutputValueClass(IntWritable.class);
+        job.setOutputKeyClass(LevelWritable.class);
+        job.setOutputValueClass(Text.class);
 
         job.setInputFormatClass(GameInputFormat.class);
 
-        job.setMapperClass(BestOpeningMapper.class);
-        job.setReducerClass(CountReducer.class);
+        job.setMapperClass(OpeningByLevel.class);
+
         job.setOutputFormatClass(TextOutputFormat.class);
-        job.setJarByClass(BestOpeningMapper.class);
+        job.setJarByClass(OpeningByLevel.class);
         return job;
     }
 }
