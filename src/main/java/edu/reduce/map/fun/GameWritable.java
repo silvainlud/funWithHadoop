@@ -12,7 +12,7 @@ import java.io.IOException;
 public class GameWritable implements Writable {
 
     private Text id;
-    private BooleanWritable rated;
+    private Text rated;
     private Text created_at;
     private Text last_move_at;
     private IntWritable turns;
@@ -72,7 +72,7 @@ public class GameWritable implements Writable {
         return id;
     }
 
-    public BooleanWritable getRated() {
+    public Text getRated() {
         return rated;
     }
 
@@ -154,7 +154,7 @@ public class GameWritable implements Writable {
         this.id = id;
     }
 
-    public void setRated(BooleanWritable rated) {
+    public void setRated(Text rated) {
         this.rated = rated;
     }
 

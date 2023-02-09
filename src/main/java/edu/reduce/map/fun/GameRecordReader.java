@@ -40,7 +40,7 @@ public class GameRecordReader extends RecordReader<LongWritable, GameWritable> {
         }
 
         gameWritable.setId(new Text(split[0]));
-        gameWritable.setRated(new BooleanWritable(Boolean.parseBoolean(split[1])));
+        gameWritable.setRated(new Text(split[1]));
         gameWritable.setCreated_at(new Text(split[2]));
         gameWritable.setLast_move_at(new Text(split[3]));
         gameWritable.setTurns(new IntWritable(Integer.parseInt(split[4])));

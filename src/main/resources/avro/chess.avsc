@@ -1,0 +1,70 @@
+{
+  "type": "record",
+  "name": "Record",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string"
+    },
+    {
+      "name": "rated",
+      "type": "string"
+    },
+    {
+      "name": "created_at",
+      "type": "string"
+    },
+    {
+      "name": "last_move_at",
+      "type": "string"
+    },
+    {
+      "name": "turns",
+      "type": "long"
+    },
+    {
+      "name": "victory_status",
+      "type": "string"
+    },
+    {
+      "name": "winner",
+      "type": "string"
+    },
+    {
+      "name": "increment_code",
+      "type": "string"
+    },
+    {
+      "name": "white_id",
+      "type": "string"
+    },
+    {
+      "name": "white_rating",
+      "type": "long"
+    },
+    {
+      "name": "black_id",
+      "type": "string"
+    },
+    {
+      "name": "black_rating",
+      "type": "long"
+    },
+    {
+      "name": "moves",
+      "type": "string"
+    },
+    {
+      "name": "opening_eco",
+      "type": "string"
+    },
+    {
+      "name": "opening_name",
+      "type": "string"
+    },
+    {
+      "name": "opening_ply",
+      "type": "long"
+    }
+  ]
+}
